@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  @apply bg-gray-900;
+}
+
+/* Leaflet map styles */
+.leaflet-container {
+  @apply bg-gray-800;
+}
+
+.leaflet-tile {
+  filter: brightness(0.6) invert(1) contrast(3) hue-rotate(200deg) saturate(0.3) brightness(0.7);
+}
+
+.leaflet-container .leaflet-control-attribution {
+  @apply bg-gray-800 text-gray-400;
+}
